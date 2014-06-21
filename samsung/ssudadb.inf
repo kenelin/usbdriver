@@ -13,7 +13,7 @@ Signature           = "$Windows NT$"
 Class               = AndroidUsbDeviceClass
 ClassGuid           = {3F966BD9-FA04-4ec5-991C-D326973B5128}
 Provider            = %ProviderName%
-DriverVer=03/10/2014,2.11.8.0
+DriverVer=04/03/2014,2.11.9.0
 CatalogFile         = ssudAdb.cat
 
 [ClassInstall32]

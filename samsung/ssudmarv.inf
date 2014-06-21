@@ -13,7 +13,7 @@ Signature           = "$Windows NT$"
 Class               = USB
 ClassGUID           ={36FC9E60-C465-11CF-8056-444553540000}
 Provider            = %ProviderName%
-DriverVer=03/10/2014,2.11.8.0
+DriverVer=04/03/2014,2.11.9.0
 CatalogFile         = ssudmarv.cat
 
 [Manufacturer]
