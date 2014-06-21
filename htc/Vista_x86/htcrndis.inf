@@ -15,7 +15,7 @@ Signature           = "$Windows NT$"
 Class               = Net
 ClassGUID           = {4d36e972-e325-11ce-bfc1-08002be10318}
 Provider            = %HTC%
-DriverVer           = 09/18/2013,1.0.0.15
+DriverVer           = 03/04/2014,1.0.0.16
 CatalogFile         = htcrndis.cat
 
 [Manufacturer]
@@ -278,6 +278,8 @@ CatalogFile         = htcrndis.cat
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e84&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e85&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e86&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ee7&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ee9&MI_00
 
 
 
@@ -538,6 +540,8 @@ CatalogFile         = htcrndis.cat
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e84&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e85&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e86&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ee7&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ee9&MI_00
 
 
 
@@ -798,6 +802,8 @@ CatalogFile         = htcrndis.cat
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e84&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e85&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e86&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ee7&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ee9&MI_00
 
 
 
