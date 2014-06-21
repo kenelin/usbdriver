@@ -1,0 +1,637 @@
+;                     
+; Remote NDIS template device setup file
+; Copyright (c) HTC Corporation
+;
+; This is the template for the INF installation script 
+; for the RNDIS-over-USB host driver.
+; This INF works for Windows XP SP2, Windows XP x64, 
+; Windows Server 2003 SP1 x86, x64, and ia64, and 
+; Windows Vista x86 and x64.
+; This INF will work with Windows XP, Windows XP SP1, 
+; and Windows 2003 after applying specific hotfixes.
+
+[Version]
+Signature           = "$Windows NT$"
+Class               = Net
+ClassGUID           = {4d36e972-e325-11ce-bfc1-08002be10318}
+Provider            = %HTC%
+DriverVer           = 08/08/2013,1.0.0.13
+CatalogFile         = htcrndis.cat
+
+[Manufacturer]
+%HTC%         = RndisDevices,NTx86,NTamd64,NTia64
+
+; Decoration for x86 architecture
+[RndisDevices.NTx86]
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F5F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F60&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F61&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F62&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F6A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F6B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F72&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F73&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7a&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7b&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7c&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7d&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7e&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7f&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f80&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f81&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f82&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f83&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f84&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f85&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f8c&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f8d&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f8e&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f8f&MI_00
+
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0fb4&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0fb5&MI_00
+
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ff6&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ff7&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ffc&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ffe
+
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0fe5&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0fe6&MI_00
+
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0700&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0701&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0702&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0703&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0704&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0705&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0706&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0707&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0708&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0709&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0710&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0711&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0712&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0713&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0714&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0715&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0716&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0717&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0718&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0719&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0720&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0721&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0722&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0723&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0724&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0725&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0726&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0727&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0728&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0729&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0730&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0731&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0732&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0733&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0734&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0735&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0736&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0737&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0738&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0739&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0740&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0741&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0742&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0743&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0744&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0745&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0746&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0747&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0748&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0749&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0750&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0751&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0752&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0753&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0754&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0755&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0756&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0757&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0758&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0759&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0760&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0761&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0762&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0763&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0764&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0765&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0766&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0767&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0768&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0769&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0770&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0771&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0772&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0773&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0774&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0775&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0776&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0777&MI_00
+
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e09
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e0a
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e14
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e15
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e1f
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e20
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e2a
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e2b
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e35
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e36
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e40
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e41
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e4b
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e4c
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e56
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e57
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e61
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e62
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e6c
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e6d
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e7d&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e7e&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e7f&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e80&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e81&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e82&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e83&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e84&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e85&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e86&MI_00
+
+
+
+; Decoration for x64 architecture
+[RndisDevices.NTamd64]
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F5F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F60&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F61&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F62&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F6A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F6B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F72&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F73&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7a&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7b&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7c&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7d&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7e&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7f&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f80&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f81&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f82&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f83&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f84&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f85&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f8c&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f8d&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f8e&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f8f&MI_00
+
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0fb4&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0fb5&MI_00
+
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ff6&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ff7&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ffc&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ffe
+
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0fe5&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0fe6&MI_00
+
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0700&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0701&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0702&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0703&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0704&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0705&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0706&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0707&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0708&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0709&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0710&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0711&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0712&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0713&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0714&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0715&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0716&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0717&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0718&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0719&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0720&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0721&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0722&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0723&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0724&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0725&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0726&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0727&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0728&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0729&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0730&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0731&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0732&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0733&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0734&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0735&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0736&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0737&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0738&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0739&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0740&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0741&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0742&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0743&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0744&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0745&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0746&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0747&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0748&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0749&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0750&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0751&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0752&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0753&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0754&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0755&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0756&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0757&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0758&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0759&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0760&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0761&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0762&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0763&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0764&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0765&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0766&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0767&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0768&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0769&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0770&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0771&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0772&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0773&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0774&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0775&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0776&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0777&MI_00
+
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e09
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e0a
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e14
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e15
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e1f
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e20
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e2a
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e2b
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e35
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e36
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e40
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e41
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e4b
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e4c
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e56
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e57
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e61
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e62
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e6c
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e6d
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e7d&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e7e&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e7f&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e80&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e81&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e82&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e83&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e84&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e85&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e86&MI_00
+
+
+
+; Decoration for ia64 architecture
+[RndisDevices.NTia64]
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F5F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F60&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F61&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F62&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F6A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F6B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F72&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F73&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7a&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7b&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7c&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7d&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7e&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f7f&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f80&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f81&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f82&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f83&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f84&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f85&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f8c&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f8d&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f8e&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0f8f&MI_00
+
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0fb4&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0fb5&MI_00
+
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ff6&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ff7&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ffc&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ffe
+
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0fe5&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0fe6&MI_00
+
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0700&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0701&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0702&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0703&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0704&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0705&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0706&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0707&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0708&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0709&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_070F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0710&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0711&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0712&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0713&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0714&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0715&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0716&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0717&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0718&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0719&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_071F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0720&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0721&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0722&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0723&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0724&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0725&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0726&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0727&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0728&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0729&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_072F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0730&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0731&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0732&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0733&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0734&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0735&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0736&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0737&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0738&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0739&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_073F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0740&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0741&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0742&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0743&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0744&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0745&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0746&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0747&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0748&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0749&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_074F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0750&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0751&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0752&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0753&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0754&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0755&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0756&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0757&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0758&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0759&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_075F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0760&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0761&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0762&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0763&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0764&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0765&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0766&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0767&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0768&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0769&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076A&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076B&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076C&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076D&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076E&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_076F&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0770&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0771&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0772&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0773&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0774&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0775&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0776&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0777&MI_00
+
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e09
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e0a
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e14
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e15
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e1f
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e20
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e2a
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e2b
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e35
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e36
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e40
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e41
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e4b
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e4c
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e56
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e57
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e61
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e62
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e6c
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e6d
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e7d&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e7e&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e7f&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e80&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e81&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e82&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e83&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e84&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e85&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e86&MI_00
+
+
+
+;@@@ This is the common setting for setup
+[ControlFlags]
+ExcludeFromSelect=*
+
+; DDInstall section
+; References the in-build Netrndis.inf
+[RNDIS.NT.5.1]
+Characteristics = 0x84;NCF_PHYSICAL + NCF_HAS_UI
+BusType         = 15
+; NEVER REMOVE THE FOLLOWING REFERENCE FOR NETRNDIS.INF
+include         = netrndis.inf
+needs           = Usb_Rndis.ndi
+AddReg          = Rndis_AddReg_Vista
+
+; DDInstal.Services section
+[RNDIS.NT.5.1.Services]
+include     = netrndis.inf
+needs       = Usb_Rndis.ndi.Services
+
+; Optional registry settings. You can modify as needed.
+[RNDIS_AddReg_Vista] 
+HKR, NDI\params\VistaProperty, ParamDesc,  0, %Vista_Property%
+HKR, NDI\params\VistaProperty, type,       0, "edit"
+HKR, NDI\params\VistaProperty, LimitText,  0, "12"
+HKR, NDI\params\VistaProperty, UpperCase,  0, "1"
+HKR, NDI\params\VistaProperty, default,    0, " "
+HKR, NDI\params\VistaProperty, optional,   0, "1"
+
+; No sys copyfiles - the sys files are already in-build 
+; (part of the operating system).
+
+; Modify these strings for your device as needed.
+[Strings]
+HTC                   = "HTC Corporation"
+RndisDevice           = "HTC Remote NDIS based Device"
+Vista_Property        = "Optional Vista Property"
+
+
