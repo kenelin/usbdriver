@@ -13,7 +13,7 @@ Signature="$WINDOWS NT$"
 Class=USB
 ClassGuid={36FC9E60-c465-11cf-8056-444553540000}
 Provider=%Provider%
-DriverVer=04/03/2014,2.11.9.0
+DriverVer=06/10/2014,2.11.10.0
 CatalogFile=ss_conn_usb_driver.cat
 
 
@@ -98,23 +98,23 @@ DefaultDestDir = 12
 [DestinationDirs]
 CoInstaller_CopyFiles = 11
 
-[ssud.NT.CoInstallers]
+[ssud.Install.NT.CoInstallers]
 AddReg=CoInstaller_AddReg
 CopyFiles=CoInstaller_CopyFiles
 
 [CoInstaller_CopyFiles]
-WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+WdfCoInstaller01007.dll
 
 [SourceDisksFiles]
-WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
+WdfCoInstaller01007.dll=1 ; make sure the number matches with SourceDisksNames
 
 [CoInstaller_AddReg]
-HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller01007.dll,WdfCoInstaller"
 
-[ss_conn_usb_driver.Dev.NT.Wdf]
+[ssud.Install.NT.Wdf]
 KmdfService = ss_conn_usb_driver, ss_conn_usb_driver_wdfsect
 [ss_conn_usb_driver_wdfsect]
-KmdfLibraryVersion = $KMDFVERSION$
+KmdfLibraryVersion = 1.7
 
 ;---------------------------------------------------------------;
 

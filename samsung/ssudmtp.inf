@@ -13,7 +13,7 @@ Signature="$Windows NT$"
 Class=WPD
 ClassGUID={EEC5AD98-8080-425f-922A-DABF3DE3F69A}
 Provider            = %Provider%
-DriverVer=04/03/2014,2.11.9.0
+DriverVer=06/10/2014,2.11.10.0
 CatalogFile=ssudmtp.cat
 
 [ControlFlags]

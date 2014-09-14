@@ -13,7 +13,7 @@ Signature   = "$Windows NT$"
 Class       = USB
 ClassGuid   = {36FC9E60-c465-11cf-8056-444553540000}
 Provider    = %ProviderName%
-DriverVer=04/03/2014,2.11.9.0
+DriverVer=06/10/2014,2.11.10.0
 CatalogFile = ssudsdb.cat
 
 ; ========== Manufacturer/Models sections ===========

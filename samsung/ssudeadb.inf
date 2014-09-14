@@ -13,7 +13,7 @@ Signature="$WINDOWS NT$"
 Class=USB
 ClassGuid={F72FE0D4-CBCB-407d-8814-9ED673D0DD6B}
 Provider=%ProviderName%
-DriverVer=04/03/2014,2.11.9.0
+DriverVer=06/10/2014,2.11.10.0
 CatalogFile=ssudeadb.cat
 
 ; ================= Class section =====================
