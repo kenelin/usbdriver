@@ -1,13 +1,13 @@
-;                     
+;
 ; Remote NDIS template device setup file
 ; Copyright (c) HTC Corporation
 ;
-; This is the template for the INF installation script 
+; This is the template for the INF installation script
 ; for the RNDIS-over-USB host driver.
-; This INF works for Windows XP SP2, Windows XP x64, 
-; Windows Server 2003 SP1 x86, x64, and ia64, and 
+; This INF works for Windows XP SP2, Windows XP x64,
+; Windows Server 2003 SP1 x86, x64, and ia64, and
 ; Windows Vista x86 and x64.
-; This INF will work with Windows XP, Windows XP SP1, 
+; This INF will work with Windows XP, Windows XP SP1,
 ; and Windows 2003 after applying specific hotfixes.
 
 [Version]
@@ -15,7 +15,7 @@ Signature           = "$Windows NT$"
 Class               = Net
 ClassGUID           = {4d36e972-e325-11ce-bfc1-08002be10318}
 Provider            = %HTC%
-DriverVer           = 07/27/2014,1.0.0.18
+DriverVer           = 08/15/2014,1.0.0.19
 CatalogFile         = htcrndis.cat
 
 [Manufacturer]
@@ -399,7 +399,13 @@ CatalogFile         = htcrndis.cat
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e85&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e86&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ee7&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EE8&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ee9&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EEA&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EF2&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EF3&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EF5&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EF6&MI_00
 
 
 
@@ -781,7 +787,13 @@ CatalogFile         = htcrndis.cat
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e85&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e86&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ee7&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EE8&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ee9&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EEA&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EF2&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EF3&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EF5&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EF6&MI_00
 
 
 
@@ -1163,7 +1175,13 @@ CatalogFile         = htcrndis.cat
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e85&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0e86&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ee7&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EE8&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0ee9&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EEA&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EF2&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EF3&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EF5&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0EF6&MI_00
 
 
 
@@ -1187,7 +1205,7 @@ include     = netrndis.inf
 needs       = Usb_Rndis.ndi.Services
 
 ; Optional registry settings. You can modify as needed.
-[RNDIS_AddReg_Vista] 
+[RNDIS_AddReg_Vista]
 HKR, NDI\params\VistaProperty, ParamDesc,  0, %Vista_Property%
 HKR, NDI\params\VistaProperty, type,       0, "edit"
 HKR, NDI\params\VistaProperty, LimitText,  0, "12"
@@ -1195,7 +1213,7 @@ HKR, NDI\params\VistaProperty, UpperCase,  0, "1"
 HKR, NDI\params\VistaProperty, default,    0, " "
 HKR, NDI\params\VistaProperty, optional,   0, "1"
 
-; No sys copyfiles - the sys files are already in-build 
+; No sys copyfiles - the sys files are already in-build
 ; (part of the operating system).
 
 ; Modify these strings for your device as needed.
