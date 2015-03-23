@@ -15,7 +15,7 @@ Signature           = "$Windows NT$"
 Class               = Net
 ClassGUID           = {4d36e972-e325-11ce-bfc1-08002be10318}
 Provider            = %HTC%
-DriverVer           = 08/15/2014,1.0.0.19
+DriverVer           = 03/03/2015,1.0.0.20
 CatalogFile         = htcrndis.cat
 
 [Manufacturer]
@@ -23,6 +23,8 @@ CatalogFile         = htcrndis.cat
 
 ; Decoration for x86 architecture
 [RndisDevices.NTx86]
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F13&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F14&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F20&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F21&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F22&MI_00
@@ -411,6 +413,8 @@ CatalogFile         = htcrndis.cat
 
 ; Decoration for x64 architecture
 [RndisDevices.NTamd64]
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F13&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F14&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F20&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F21&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F22&MI_00
@@ -799,6 +803,8 @@ CatalogFile         = htcrndis.cat
 
 ; Decoration for ia64 architecture
 [RndisDevices.NTia64]
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F13&MI_00
+%RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F14&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F20&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F21&MI_00
 %RndisDevice%    = RNDIS.NT.5.1,USB\VID_0bb4&PID_0F22&MI_00
