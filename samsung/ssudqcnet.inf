@@ -12,14 +12,14 @@ Signature   = "$Windows NT$"
 Class       = Net
 ClassGUID   = {4d36e972-e325-11ce-bfc1-08002be10318}
 Provider    = %Provider%
-DriverVer   = 02/20/2013,4.0.2.2
+DriverVer   = 11/24/2014,2.11.11.0
 Catalogfile = ssudqcnet.cat
 
 [ControlFlags]
 ExcludeFromSelect = *
 
 [Manufacturer]
-%ssud% = ssud,NTx86, NTamd64
+%ssud% = ssud, NTamd64
 
 [SourceDisksNames.x86]
 1 = %DiskString%,"",,\i386
@@ -28,47 +28,31 @@ ExcludeFromSelect = *
 1 = %DiskString%,"",,\amd64
 
 [SourceDisksFiles]
-  ssudqcnet.sys = 1
-  
- [DestinationDirs]
-DefaultDestDir = 12
-CoInstaller_CopyFiles = 11
+ssudqcnet.sys = 1
 
 [ssud]
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_685D&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_685E&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6860&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6861&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6862&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6864&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6866&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6867&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686A&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686B&RMNET_QMAP
-
-[ssud.NTx86]
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_685D&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_685E&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6860&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6861&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6862&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6864&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6866&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6867&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686A&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686B&RMNET_QMAP
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_685D&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_685E&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6860&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6861&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6862&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6864&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6866&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6867&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686A&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686B&QCNet&QCNet
 
 [ssud.NTamd64]
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_685D&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_685E&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6860&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6861&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6862&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6864&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6866&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6867&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686A&RMNET_QMAP
-%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686B&RMNET_QMAP
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_685D&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_685E&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6860&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6861&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6862&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6864&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6866&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6867&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686A&QCNet&QCNet
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686B&QCNet&QCNet
 
 ;-------------------------------------------------------------------------------
 ; Virtual Ethernet Adapter
@@ -170,7 +154,7 @@ HKR, , TextModeFlags,    0x00010001, 0x0001
 ; 1 = %DiskId1%,,,""
 
 [SourceDisksFiles]
-   ssudqcnet.sys  = 1
+ssudqcnet.sys  = 1
 
 ;-----------------------------------------------------------------------------
 ; DestinationDirs
@@ -185,8 +169,7 @@ DefaultDestDir = 12
 Provider="SAMSUNG Electronics Co., Ltd."
 ssud="SAMSUNG Electronics Co., Ltd."
 
-DiskString="SAMSUNG Mobile USB RMNET Network Adapter Drivers Installation Disk"                    
-USB\SAMSUNG_MOBILE&RMNET.DeviceDesc="SAMSUNG Mobile USB RMNET Network Adapter Drivers"
+DiskString="SAMSUNG Mobile USB QCRMNET Network Adapter Drivers Installation Disk"
+USB\SAMSUNG_MOBILE&RMNET.DeviceDesc="SAMSUNG Mobile USB QCRMNET Network Adapter Drivers"
 ssud.Service.Name="SAMSUNG Mobile USB QC RMNET Drivers"
 ssud.Service.Desc="SAMSUNG Mobile USB QC RMNET Drivers"
-

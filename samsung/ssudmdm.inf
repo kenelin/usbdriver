@@ -13,7 +13,7 @@ signature ="$WINDOWS NT$"
 Class     =Modem
 ClassGuid ={4d36e96d-e325-11ce-bfc1-08002be10318}
 Provider  =%Provider%
-DriverVer=06/10/2014,2.11.10.0
+DriverVer=05/13/2015,2.12.0.0
 CatalogFile=ssudmdm.cat
 
 

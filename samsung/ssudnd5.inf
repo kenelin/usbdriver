@@ -13,7 +13,7 @@ Signature   = "$Windows NT$"
 Class       = Net
 ClassGUID   = {4d36e972-e325-11ce-bfc1-08002be10318}
 Provider    = %Msft%
-DriverVer=06/10/2014,2.11.10.0
+DriverVer=05/13/2015,2.12.0.0
 Catalogfile = ssudnd5.cat
 
 [ControlFlags]
