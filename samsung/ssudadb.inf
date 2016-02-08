@@ -13,7 +13,7 @@ Signature           = "$Windows NT$"
 Class               = AndroidUsbDeviceClass
 ClassGuid           = {3F966BD9-FA04-4ec5-991C-D326973B5128}
 Provider            = %ProviderName%
-DriverVer=05/13/2015,2.12.0.0
+DriverVer=12/02/2015,2.12.1.0
 CatalogFile         = ssudAdb.cat
 
 [ClassInstall32]
@@ -38,6 +38,7 @@ HKR,,Icon,,-1
 %CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_6868&ADB
 %CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_686A&ADB
 %CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_686B&ADB
+%CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_686C&ADB
 %CompositeAdbInterface%     = ssud.Install, USB\SAMSUNG_MOBILE&ADB
 
 [Google.NTamd64]
@@ -52,6 +53,7 @@ HKR,,Icon,,-1
 %CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_6868&ADB
 %CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_686A&ADB
 %CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_686B&ADB
+%CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_686C&ADB
 %CompositeAdbInterface%     = ssud.Install, USB\SAMSUNG_MOBILE&ADB
 
 [ssud.Install.nt]

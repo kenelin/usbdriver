@@ -13,7 +13,7 @@ Signature           = "$Windows NT$"
 Class               = USB
 ClassGUID           ={36FC9E60-C465-11CF-8056-444553540000}
 Provider            = %ProviderName%
-DriverVer=05/13/2015,2.12.0.0
+DriverVer=12/02/2015,2.12.1.0
 CatalogFile         = ssudmarv.cat
 
 [Manufacturer]
@@ -30,6 +30,7 @@ CatalogFile         = ssudmarv.cat
 %MarvelDiagInterface%     = ssud.Install, USB\VID_04E8&PID_6867&MarvelDiag
 %MarvelDiagInterface%     = ssud.Install, USB\VID_04E8&PID_686A&MarvelDiag
 %MarvelDiagInterface%     = ssud.Install, USB\VID_04E8&PID_686B&MarvelDiag
+%MarvelDiagInterface%     = ssud.Install, USB\VID_04E8&PID_686C&MarvelDiag
 
 [ssud.NTamd64]
 %MarvelDiagInterface%     = ssud.Install, USB\SAMSUNG_MOBILE&MarvelDiag
@@ -42,6 +43,7 @@ CatalogFile         = ssudmarv.cat
 %MarvelDiagInterface%     = ssud.Install, USB\VID_04E8&PID_6867&MarvelDiag
 %MarvelDiagInterface%     = ssud.Install, USB\VID_04E8&PID_686A&MarvelDiag
 %MarvelDiagInterface%     = ssud.Install, USB\VID_04E8&PID_686B&MarvelDiag
+%MarvelDiagInterface%     = ssud.Install, USB\VID_04E8&PID_686C&MarvelDiag
 
 [ssud.Install.nt]
 Include = winusb.inf

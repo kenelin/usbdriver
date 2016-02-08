@@ -13,7 +13,7 @@ Signature   = "$WINDOWS NT$"
 Class       = USB
 ClassGuid   = {36FC9E60-c465-11cf-8056-444553540000}
 Provider    = %Provider%
-DriverVer=05/13/2015,2.12.0.0
+DriverVer=12/02/2015,2.12.1.0
 CatalogFile = ssudrmnet.cat
 
 [ControlFlags]
@@ -50,6 +50,7 @@ CoInstaller_CopyFiles = 11
 %USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6867&RMNET
 %USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686A&RMNET
 %USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686B&RMNET
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686C&RMNET
 %USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\SAMSUNG_MOBILE&RMNET
 
 [ssud.NTx86]
@@ -63,6 +64,7 @@ CoInstaller_CopyFiles = 11
 %USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6867&RMNET
 %USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686A&RMNET
 %USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686B&RMNET
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686C&RMNET
 %USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\SAMSUNG_MOBILE&RMNET
 
 [ssud.NTamd64]
@@ -76,6 +78,7 @@ CoInstaller_CopyFiles = 11
 %USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6867&RMNET
 %USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686A&RMNET
 %USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686B&RMNET
+%USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686C&RMNET
 %USB\SAMSUNG_MOBILE&RMNET.DeviceDesc% = ssud.Install, USB\SAMSUNG_MOBILE&RMNET
 
 [ssud.Install.NT]

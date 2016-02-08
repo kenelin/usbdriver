@@ -13,7 +13,7 @@ Signature   = "$Windows NT$"
 Class       = USB
 ClassGuid   = {36FC9E60-c465-11cf-8056-444553540000}
 Provider    = %ProviderName%
-DriverVer=05/13/2015,2.12.0.0
+DriverVer=12/02/2015,2.12.1.0
 CatalogFile = ssudsdb.cat
 
 ; ========== Manufacturer/Models sections ===========
@@ -32,6 +32,7 @@ CatalogFile = ssudsdb.cat
 %SamsungDebugBridge%     = ssud.Install, USB\VID_04E8&PID_6867&SDB
 %SamsungDebugBridge%     = ssud.Install, USB\VID_04E8&PID_686A&SDB
 %SamsungDebugBridge%     = ssud.Install, USB\VID_04E8&PID_686B&SDB
+%SamsungDebugBridge%     = ssud.Install, USB\VID_04E8&PID_686C&SDB
 %SamsungDebugBridge%     = ssud.Install, USB\SAMSUNG_MOBILE&SDB
 
 [ssud.NTamd64]
@@ -45,6 +46,7 @@ CatalogFile = ssudsdb.cat
 %SamsungDebugBridge%     = ssud.Install, USB\VID_04E8&PID_6867&SDB
 %SamsungDebugBridge%     = ssud.Install, USB\VID_04E8&PID_686A&SDB
 %SamsungDebugBridge%     = ssud.Install, USB\VID_04E8&PID_686B&SDB
+%SamsungDebugBridge%     = ssud.Install, USB\VID_04E8&PID_686C&SDB
 %SamsungDebugBridge%     = ssud.Install, USB\SAMSUNG_MOBILE&SDB
 
 ; =================== Installation ===================

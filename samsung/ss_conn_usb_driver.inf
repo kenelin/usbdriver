@@ -13,7 +13,7 @@ Signature="$WINDOWS NT$"
 Class=USB
 ClassGuid={36FC9E60-c465-11cf-8056-444553540000}
 Provider=%Provider%
-DriverVer=05/13/2015,2.12.0.0
+DriverVer=12/02/2015,2.12.1.0
 CatalogFile=ss_conn_usb_driver.cat
 
 
@@ -42,6 +42,7 @@ CatalogFile=ss_conn_usb_driver.cat
 %SAMSUNG.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6864&CONN
 %SAMSUNG.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6866&CONN
 %SAMSUNG.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6867&CONN
+%SAMSUNG.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686C&CONN
 
 ; For XP and later
 [ssud.NTx86]
@@ -53,6 +54,7 @@ CatalogFile=ss_conn_usb_driver.cat
 %SAMSUNG.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6864&CONN
 %SAMSUNG.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6866&CONN
 %SAMSUNG.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6867&CONN
+%SAMSUNG.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686C&CONN
 
 [ssud.NTamd64]
 %SAMSUNG.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_685D&CONN
@@ -63,6 +65,7 @@ CatalogFile=ss_conn_usb_driver.cat
 %SAMSUNG.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6864&CONN
 %SAMSUNG.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6866&CONN
 %SAMSUNG.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6867&CONN
+%SAMSUNG.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686C&CONN
 
 [ssud.Install.NT]
 CopyFiles=ssud.NT.CopyFiles

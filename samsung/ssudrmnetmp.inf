@@ -13,7 +13,7 @@ Signature   = "$Windows NT$"
 Class       = Net
 ClassGUID   = {4d36e972-e325-11ce-bfc1-08002be10318}
 Provider    = %Provider%
-DriverVer=05/13/2015,2.12.0.0
+DriverVer=12/02/2015,2.12.1.0
 Catalogfile = ssudrmnetmp.cat
 
 [ControlFlags]
@@ -59,6 +59,7 @@ CoInstaller_CopyFiles = 11
 %USB\VID_04E8&PID_6863&RMNETMP.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6863&MP&RMNETMP
 %USB\VID_04E8&PID_686A&RMNETMP.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686A&MP&RMNETMP
 %USB\VID_04E8&PID_686B&RMNETMP.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686B&MP&RMNETMP
+%USB\VID_04E8&PID_686C&RMNETMP.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686C&MP&RMNETMP
 
 [ssud.NTx86]
 %USB\VID_04E8&PID_685D&RMNETMP.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_685D&MP&RMNETMP
@@ -69,6 +70,7 @@ CoInstaller_CopyFiles = 11
 %USB\VID_04E8&PID_6863&RMNETMP.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6863&MP&RMNETMP
 %USB\VID_04E8&PID_686A&RMNETMP.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686A&MP&RMNETMP
 %USB\VID_04E8&PID_686B&RMNETMP.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686B&MP&RMNETMP
+%USB\VID_04E8&PID_686C&RMNETMP.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686C&MP&RMNETMP
 
 [ssud.NTamd64]
 %USB\VID_04E8&PID_685D&RMNETMP.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_685D&MP&RMNETMP
@@ -79,6 +81,7 @@ CoInstaller_CopyFiles = 11
 %USB\VID_04E8&PID_6863&RMNETMP.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_6863&MP&RMNETMP
 %USB\VID_04E8&PID_686A&RMNETMP.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686A&MP&RMNETMP
 %USB\VID_04E8&PID_686B&RMNETMP.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686B&MP&RMNETMP
+%USB\VID_04E8&PID_686C&RMNETMP.DeviceDesc% = ssud.Install, USB\VID_04E8&PID_686C&MP&RMNETMP
 
 ;-------------------------------------------------------------------------------
 ; Virtual Ethernet Adapter
@@ -176,6 +179,7 @@ USB\VID_04E8&PID_6862&RMNETMP.DeviceDesc = "SAMSUNG Mobile USB RMNET Network Ada
 USB\VID_04E8&PID_6863&RMNETMP.DeviceDesc = "SAMSUNG Mobile USB RMNET Network Adapter Drivers"
 USB\VID_04E8&PID_686A&RMNETMP.DeviceDesc = "SAMSUNG Mobile USB RMNET Network Adapter Drivers"
 USB\VID_04E8&PID_686B&RMNETMP.DeviceDesc = "SAMSUNG Mobile USB RMNET Network Adapter Drivers"
+USB\VID_04E8&PID_686C&RMNETMP.DeviceDesc = "SAMSUNG Mobile USB RMNET Network Adapter Drivers"
 
 ssud.Service.Name = "SAMSUNG Mobile USB RMNET Network Adapter Drivers"
 ssud.Service.Desc = "SAMSUNG Mobile USB RMNET Network Adapter Drivers"

@@ -13,7 +13,7 @@ Signature="$WINDOWS NT$"
 Class=USB
 ClassGuid={F72FE0D4-CBCB-407d-8814-9ED673D0DD6B}
 Provider=%ProviderName%
-DriverVer=05/13/2015,2.12.0.0
+DriverVer=12/02/2015,2.12.1.0
 CatalogFile=ssudeadb.cat
 
 ; ================= Class section =====================
@@ -57,6 +57,7 @@ ssud.NT.CopyFiles		= 12
 %CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_6868&ADB_1_5
 %CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_686A&ADB_1_5
 %CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_686B&ADB_1_5
+%CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_686C&ADB_1_5
 %CompositeAdbInterface%     = ssud.Install, USB\SAMSUNG_MOBILE&ADB_1_5
 
 [ssud.NTx86]
@@ -71,6 +72,7 @@ ssud.NT.CopyFiles		= 12
 %CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_6868&ADB_1_5
 %CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_686A&ADB_1_5
 %CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_686B&ADB_1_5
+%CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_686C&ADB_1_5
 %CompositeAdbInterface%     = ssud.Install, USB\SAMSUNG_MOBILE&ADB_1_5
 
 [ssud.NTamd64]
@@ -85,6 +87,7 @@ ssud.NT.CopyFiles		= 12
 %CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_6868&ADB_1_5
 %CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_686A&ADB_1_5
 %CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_686B&ADB_1_5
+%CompositeAdbInterface%     = ssud.Install, USB\VID_04E8&PID_686C&ADB_1_5
 %CompositeAdbInterface%     = ssud.Install, USB\SAMSUNG_MOBILE&ADB_1_5
 
 [ssud.Install.NT]
