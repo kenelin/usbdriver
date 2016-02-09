@@ -7,7 +7,7 @@ Signature="$WINDOWS NT$"
 Class=WPD
 ClassGUID={EEC5AD98-8080-425f-922A-DABF3DE3F69A}
 Provider=%Provider%
-DriverVer=05/14/2014,1.0.0.13
+DriverVer=03/16/2015,1.0.0.14
 CatalogFile=asus_wpdmtp.cat
 
 [Manufacturer]
